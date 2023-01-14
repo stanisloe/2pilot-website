@@ -127,14 +127,19 @@
 
       /* Add styles for footer */
       .footer {
-          margin-top: 50px;
+          margin-top: 30px;
           background-color: #2a459a;
           color: #fff;
           text-align: center;
-          padding: 10px;
+          display: flex;
+          justify-content: space-between;
       }
 
-      .fa {
+      .footer div {
+          margin: 20px 20px 20px;
+      }
+
+      .fa-social-media {
           margin: 15px 5px 5px;
           font-size: 35px;
           /*width: 30px;*/
@@ -142,25 +147,17 @@
           text-decoration: none;
       }
 
+      .fa-social-media.blue {
+          color: #2a459a;
+      }
+
+      .fa-social-media.white {
+          color: white;
+      }
+
       /* Add a hover effect if you want */
-      .fa:hover {
+      .fa-social-media:hover {
           opacity: 0.7;
-      }
-
-      /* Set a specific color for each brand */
-
-      /* Facebook */
-      .fa-medium {
-          color: #2a459a;
-      }
-
-      /* Twitter */
-      .fa-twitter {
-          color: #2a459a;
-      }
-
-      .fa-github {
-          color: #2a459a;
       }
 
       .folding-block {
@@ -205,9 +202,9 @@
     <p style="margin: 12px 10px; margin-left: 10px; vertical-align: center">2pilot</p>
   </div>
   <div>
-    <a class="fa fa-twitter" href="#"></a>
-    <a class="fa fa-medium" href="#"></a>
-    <a class="fa fa-github" href="#"></a>
+    <a class="fa fa-social-media fa-twitter blue " href="#"></a>
+    <a class="fa fa-social-media fa-medium blue " href="#"></a>
+    <a class="fa fa-social-media fa-github blue" href="#"></a>
   </div>
 </div>
 <div class="about-us">
@@ -352,7 +349,12 @@
   </div>
 </div>
 <div class="footer">
-  <p>2023, 2pilot.dev</p>
+  <div><p>&copy; 2023, 2pilot.dev</p></div>
+  <div>
+    <a class="fa fa-twitter fa-social-media white" href="#"></a>
+    <a class="fa fa-medium fa-social-media white" href="#"></a>
+    <a class="fa fa-github fa-social-media white" href="#"></a>
+  </div>
 </div>
 
 <script>
