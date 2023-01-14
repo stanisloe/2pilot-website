@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landing Page</title>
+  <style>
+      /* Add styles here */
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+      }
+      .header {
+          background-color: #38437f;
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+      }
+      .header h1 {
+          margin-top: 0;
+          font-size: 36px;
+      }
+      .header p {
+          margin-top: 0;
+          margin-bottom: 20px;
+          font-size: 16px;
+      }
+      /* Add styles for content */
+      .content {
+          padding: 0 20px;
+          display: flex;
+          flex-wrap: wrap;
+      }
+      /* Add styles for feature title */
+      .content h2 {
+          text-align: center;
+          margin-bottom: 20px;
+          font-size: 36px;
+          font-weight: bold;
+      }
+      /* Add styles for feature blocks */
+      .block {
+          flex: 0 0 calc(33.33% - 20px); /* set flex-basis to 33.33% and subtract 20px for margins */
+          margin: 10px;
+          text-align: center;
+          vertical-align: top;
+          background: #f5f5f5;
+          padding: 20px;
+          border: 1px solid #ddd;
+          transition: box-shadow 0.3s ease-in-out; /* Add transition */
+      }
+      .block:hover {
+          box-shadow: 0px 0px 10px 0px #ddd; /* Add box-shadow on hover */
+      }
+      .block img {
+          width: 75px; /* Add fixed width */
+          height: 75px; /* Add fixed height */
+          margin-bottom: 20px;
+      }
+      .block h3 {
+          margin-top: 0;
+          margin-bottom: 5px;
+          font-size: 20px;
+      }
+      .block p {
+          margin-top: 0;
+          margin-bottom: 20px;
+          font-size: 16px;
+      }
+      .block a {
+          display: inline-block;
+          width: 48%;
+          margin: 0 2% 10px 2%;
+          background: #da342e;
+          color: #fff;
+          text-align: center;
+          text-decoration: none;
+          padding: 10px 20px;
+      }
+      .block a:hover {
+          background: #e54b4b;
+          color: #fff;
+          cursor: pointer;
+      }
+      /* Add styles for footer */
+      .footer {
+          background-color: #f2f2f2;
+          color: #333;
+          text-align: center;
+          padding: 10px;
+      }
+      /* Media Queries for Responsive Design */
+      @media only screen and (min-width: 570px) {
+          .block {
+              flex: 1 0 calc(33.33% - 20px);
+          }
+      }
+  </style>
+</head>
+<body>
+<div class="header">
+  <h1>Your Website Title</h1>
+  <p>Your Website Description</p>
+</div>
+<div class="content">
+  <h2>Features</h2>
+  <div class="block">
+    <img src="image/forta.png" alt="Random Image 1">
+    <h3>Feature 1</h3>
+    <p>Description of Feature 1</p>
+    <a href="#">Button 1</a>
+    <a href="#">Button 2</a>
+  </div>
+  <div class="block">
+    <img src="image/hypersign.png" alt="Random Image 2">
+    <h3>Feature 2</h3>
+    <p>Description of Feature 2</p>
+    <a href="#">Button 1</a>
+    <a href="#">Button 2</a>
+  </div>
+  <div class="block">
+    <img src="image/islamic.png" alt="Random Image 3">
+    <h3>Feature 3</h3>
+    <p>Description of Feature 3</p>
+    <a href="#">Button 1</a>
+    <a href="#">Button 2</a>
+  </div>
+  <div class="block">
+    <img src="image/near.png" alt="Random Image 4">
+    <h3>Feature 4</h3>
+    <p>Description of Feature 4</p>
+    <a href="#">Button 1</a>
+    <a href="#">Button 2</a>
+  </div>
+  <div class="block">
+    <img src="image/okp4.png" alt="Random Image 5">
+    <h3>Feature 5</h3>
+    <p>Description of Feature 5</p>
+    <a href="#">Button 1</a>
+    <a href="#">Button 2</a>
+  </div>
+  <div class="block">
+    <img src="image/quicksilver.png" alt="Random Image 6">
+    <h3>Feature 6</h3>
+    <p>Description of Feature 6</p>
+    <a href="#">Button 1</a>
+    <a href="#">Button 2</a>
+  </div>
+</div>
+<div class="footer">
+  <p>Copyright © 2023 Your Company Name</p>
+</div>
+</body>
+</html>
