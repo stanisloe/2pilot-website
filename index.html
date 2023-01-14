@@ -163,6 +163,33 @@
           color: #2a459a;
       }
 
+      .folding-block {
+          padding: 20px;
+          overflow: hidden; /* hide overflow */
+          max-height: 0; /* set max-height to 0 to collapse block by default */
+      }
+      .folding-block.expanded {
+          max-height: 100%; /* set max-height to expand block */
+      }
+      .folding-block h2 {
+          margin-top: 0;
+          margin-bottom: 10px;
+          font-size: 20px;
+          display: flex; /* display title as a flex container */
+          align-items: center; /* align items vertically */
+      }
+      .folding-block h2 i {
+          font-size: 20px; /* set font size of triangle icon */
+          margin-right: 10px; /* add margin to the right of icon */
+          cursor: pointer; /* add cursor pointer on hover */
+      }
+      .folding-block h2 i.fa-caret-left {
+          transform: rotate(180deg); /* rotate icon to point left when block is collapsed */
+      }
+      .folding-block h2 i.fa-caret-down {
+          transform: rotate(0deg); /* rotate icon to point down when block is expanded */
+      }
+
       /* Media Queries for Responsive Design */
       /*@media only screen and (min-width: 300px) and (max-width: 300px) {*/
       /*    .block {*/
@@ -277,8 +304,65 @@
     </div>
   </div>
 </div>
+<div class="section folding-block">
+  <div class="section-header"><h2><i class="fas fa-caret-left"></i>Landed Testnets</h2></div>
+  <div class="content">
+    <div class="block">
+      <img src="image/forta.png" alt="Random Image 1">
+      <h3>Feature 1</h3>
+      <p>Description of Feature 1</p>
+      <a href="#">Button 1</a>
+      <a href="#">Button 2</a>
+    </div>
+    <div class="block">
+      <img src="image/hypersign.png" alt="Random Image 2">
+      <h3>Feature 2</h3>
+      <p>Description of Feature 2</p>
+      <a href="#">Button 1</a>
+      <a href="#">Button 2</a>
+    </div>
+    <div class="block">
+      <img src="image/islamic.png" alt="Random Image 3">
+      <h3>Feature 3</h3>
+      <p>Description of Feature 3</p>
+      <a href="#">Button 1</a>
+      <a href="#">Button 2</a>
+    </div>
+    <div class="block">
+      <img src="image/near.png" alt="Random Image 4">
+      <h3>Feature 4</h3>
+      <p>Description of Feature 4</p>
+      <a href="#">Button 1</a>
+      <a href="#">Button 2</a>
+    </div>
+    <div class="block">
+      <img src="image/okp4.png" alt="Random Image 5">
+      <h3>Feature 5</h3>
+      <p>Description of Feature 5</p>
+      <a href="#">Button 1</a>
+      <a href="#">Button 2</a>
+    </div>
+    <div class="block">
+      <img src="image/quicksilver.png" alt="Random Image 6">
+      <h3>Feature 6</h3>
+      <p>Description of Feature 6</p>
+      <a href="#">Button 1</a>
+      <a href="#">Button 2</a>
+    </div>
+  </div>
+</div>
 <div class="footer">
   <p>2023, 2pilot.dev</p>
 </div>
+
+<script>
+  const block = document.querySelector('.folding-block');
+  const icon = document.querySelector('.fa-caret-left');
+  block.addEventListener('click', function() {
+    block.classList.toggle('expanded');
+    icon.classList.toggle('fa-caret-left');
+    icon.classList.toggle('fa-caret-down');
+  });
+</script>
 </body>
 </html>
