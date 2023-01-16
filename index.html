@@ -11,6 +11,7 @@
           margin: 0;
           padding: 0;
       }
+
       .header {
           /*background-color: #1d3557;*/
           /*color: #fff;*/
@@ -19,6 +20,7 @@
           display: flex;
           justify-content: space-between;
       }
+
       .header-logo {
           text-align: center;
           display: flex;
@@ -33,6 +35,7 @@
           margin-bottom: 0;
           margin-left: 10px;
           vertical-align: center;
+          color: #e54b4b;
       }
 
       .header-logo img {
@@ -55,13 +58,12 @@
       }
 
       .stars {
-          background-image:
-                  radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
-                  radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
-                  radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
-                  radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
-                  radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
-                  radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
+          background-image: radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)),
+          radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
+          radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)),
+          radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)),
+          radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)),
+          radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
           background-repeat: repeat;
           background-size: 150px 150px;
       }
@@ -85,6 +87,7 @@
       .section div {
           max-width: 1000px;
       }
+
       /* Add styles for content */
       .content {
           display: flex;
@@ -195,9 +198,11 @@
           overflow: hidden; /* hide overflow */
           max-height: 0; /* set max-height to 0 to collapse block by default */
       }
+
       .folding-block.expanded {
           max-height: 100%; /* set max-height to expand block */
       }
+
       .folding-block h2 {
           margin-top: 0;
           margin-bottom: 10px;
@@ -205,14 +210,17 @@
           display: flex; /* display title as a flex container */
           align-items: center; /* align items vertically */
       }
+
       .folding-block h2 i {
           font-size: 20px; /* set font size of triangle icon */
           margin-right: 10px; /* add margin to the right of icon */
           cursor: pointer; /* add cursor pointer on hover */
       }
+
       .folding-block h2 i.fa-caret-left {
           transform: rotate(180deg); /* rotate icon to point left when block is collapsed */
       }
+
       .folding-block h2 i.fa-caret-down {
           transform: rotate(0deg); /* rotate icon to point down when block is expanded */
       }
@@ -228,7 +236,7 @@
 <body>
 <div class="header">
   <div class="header-logo">
-    <img src="image/logo.png" />
+    <img src="image/logo.png"/>
     <p>2pilot</p>
   </div>
   <div>
@@ -239,17 +247,25 @@
   </div>
 </div>
 <div class="about-us stars">
-  <div style="margin: 20px; width: 350px; background-color: #1d3557">
-    <h2>Co-Pilot you can rely on</h2>
-    <p>
-      We are team of it professionals with huge expertise in software engineering,
-      devops and tech writing here at your service to help you with any challenges
-      you meet on a path to mainnet. Be it  running a validator node; providing rpc,
-      block explorer; writing dope article about your game changing technology;
-      creating positive vibes at discord server; or just name any other service
-      you need - we are always happy to be your co-pilot on the way to the moon.
+  <div style="margin: 20px; width: 400px; background-color: #1d3557">
+    <h2>Co-pilot you can always rely on</h2>
+    <p>Team of IT professionals with huge expertise in software engineering,
+      devops and tech writing here at your service.
     </p>
+    <p><b>Startups can rest assured we'll provide:</b></p>
+    <ul>
+      <li>Validator / rpc node; relayers; block explorer</li>
+      <li>Dope article about your game changing tech</li>
+      <li>Positive vibes at discord server</li>
+    </ul>
+    <p><b>As a delegator you can count on:</b></p>
+    <ul>
+      <li>Full support</li>
+      <li>High uptime and no slashing</li>
+      <li>Low commissions</li>
+    </ul>
   </div>
+
   <img src="image/about-us-2.png">
 </div>
 <div class="section">
@@ -394,7 +410,7 @@
 <script>
   const block = document.querySelector('.folding-block');
   const icon = document.querySelector('.fa-caret-left');
-  block.addEventListener('click', function() {
+  block.addEventListener('click', function () {
     block.classList.toggle('expanded');
     icon.classList.toggle('fa-caret-left');
     icon.classList.toggle('fa-caret-down');
