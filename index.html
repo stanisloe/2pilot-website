@@ -5,7 +5,6 @@
   <script src="https://kit.fontawesome.com/edccfca4b9.js" crossorigin="anonymous"></script>
   <title>Blaaa bla</title>
   <style>
-      /* Add styles here */
       body {
           font-family: Arial, sans-serif;
           margin: 0;
@@ -13,8 +12,6 @@
       }
 
       .header {
-          /*background-color: #1d3557;*/
-          /*color: #fff;*/
           margin: 10px;
           text-align: center;
           display: flex;
@@ -35,7 +32,7 @@
           margin-bottom: 0;
           margin-left: 10px;
           vertical-align: center;
-          color: #e54b4b;
+          color: #1d3557;
       }
 
       .header-logo img {
@@ -78,7 +75,6 @@
       }
 
       .section-header {
-          /*margin-left: 80px;*/
           width: 100%;
           display: flex;
           flex-wrap: wrap;
@@ -88,7 +84,6 @@
           max-width: 1000px;
       }
 
-      /* Add styles for content */
       .content {
           display: flex;
           flex-wrap: wrap;
@@ -97,7 +92,6 @@
           box-sizing: border-box;
       }
 
-      /* Add styles for feature title */
       .content h2 {
           text-align: center;
           margin-bottom: 20px;
@@ -105,7 +99,6 @@
           font-weight: bold;
       }
 
-      /* Add styles for feature blocks */
       .block {
           width: 25%;
           min-width: 200px;
@@ -119,14 +112,18 @@
       }
 
       .block:hover {
-          box-shadow: 0px 0px 10px 0px #ddd; /* Add box-shadow on hover */
+          box-shadow: 0px 0px 10px 0px #ddd;
       }
 
       .block img {
-          width: 75px; /* Add fixed width */
-          height: 75px; /* Add fixed height */
+          width: 75px;
+          height: 75px;
           margin-bottom: 20px;
-          /*border-radius: 100%;*/
+          border-radius: 100%;
+      }
+
+      .block p {
+          height: 50px;
       }
 
       .block h3 {
@@ -158,7 +155,6 @@
           cursor: pointer;
       }
 
-      /* Add styles for footer */
       .footer {
           margin-top: 30px;
           background-color: #1d3557;
@@ -175,7 +171,6 @@
       .fa-social-media {
           margin: 10px 5px 5px;
           font-size: 30px;
-          /*width: 30px;*/
           text-align: center;
           text-decoration: none;
       }
@@ -188,49 +183,41 @@
           color: white;
       }
 
-      /* Add a hover effect if you want */
       .fa-social-media:hover {
           opacity: 0.7;
       }
 
       .folding-block {
           padding: 20px;
-          overflow: hidden; /* hide overflow */
-          max-height: 0; /* set max-height to 0 to collapse block by default */
+          overflow: hidden;
+          max-height: 0;
       }
 
       .folding-block.expanded {
-          max-height: 100%; /* set max-height to expand block */
+          max-height: 100%;
       }
 
       .folding-block h2 {
           margin-top: 0;
           margin-bottom: 10px;
           font-size: 20px;
-          display: flex; /* display title as a flex container */
-          align-items: center; /* align items vertically */
+          display: flex;
+          align-items: center;
       }
 
       .folding-block h2 i {
-          font-size: 20px; /* set font size of triangle icon */
-          margin-right: 10px; /* add margin to the right of icon */
-          cursor: pointer; /* add cursor pointer on hover */
+          font-size: 20px;
+          margin-right: 10px;
+          cursor: pointer;
       }
 
       .folding-block h2 i.fa-caret-left {
-          transform: rotate(180deg); /* rotate icon to point left when block is collapsed */
+          transform: rotate(180deg);
       }
 
       .folding-block h2 i.fa-caret-down {
-          transform: rotate(0deg); /* rotate icon to point down when block is expanded */
+          transform: rotate(0deg);
       }
-
-      /* Media Queries for Responsive Design */
-      /*@media only screen and (min-width: 300px) and (max-width: 300px) {*/
-      /*    .block {*/
-      /*        flex: 1 0 calc(33.33% - 20px);*/
-      /*    }*/
-      /*}*/
   </style>
 </head>
 <body>
@@ -240,16 +227,16 @@
     <p>2pilot</p>
   </div>
   <div>
-    <a class="fa fa-social-media fa-twitter blue " href="#"></a>
-    <a class="fa fa-social-media fa-medium blue " href="#"></a>
-    <a class="fa fa-social-media fa-github blue" href="#"></a>
-    <a class="fa fa-envelope fa-social-media blue" href="#"></a>
+    <a class="fa fa-social-media fa-twitter blue " href="#" target="_blank" rel="noopener noreferrer"></a>
+    <a class="fa fa-social-media fa-medium blue " href="#" target="_blank" rel="noopener noreferrer"></a>
+    <a class="fa fa-social-media fa-github blue" href="#" target="_blank" rel="noopener noreferrer"></a>
+    <a class="fa fa-envelope fa-social-media blue" href="#" target="_blank" rel="noopener noreferrer"></a>
   </div>
 </div>
 <div class="about-us stars">
   <div style="margin: 20px; width: 400px; background-color: #1d3557">
     <h2>Co-pilot you can always rely on</h2>
-    <p>Team of IT professionals with huge expertise in software engineering,
+    <p>We are team of IT professionals with huge expertise in software engineering,
       devops and tech writing here at your service.
     </p>
     <p><b>Startups can rest assured we'll provide:</b></p>
@@ -272,32 +259,24 @@
   <div class="section-header"><h2>Mainnet</h2></div>
   <div class="content">
     <div class="block">
-      <img src="image/forta.png" alt="Random Image 1">
-      <h3>Feature 1</h3>
-      <p>Description of Feature 1</p>
-      <a href="#">Button 1</a>
-      <a href="#">Button 2</a>
+      <img src="image/near.png" alt="Near">
+      <h3>Near</h3>
+      <p>Blockchain built to be simple, secure and scalable</p>
+      <a href="https://nearscope.net/validator/2pilot.poolv1.near" target="_blank" rel="noopener noreferrer">Stake</a>
+      <a href="https://near.org/" target="_blank" rel="noopener noreferrer">Info</a>
     </div>
     <div class="block">
-      <img src="image/hypersign.png" alt="Random Image 2">
-      <h3>Feature 2</h3>
-      <p>Description of Feature 2</p>
-      <a href="#">Button 1</a>
-      <a href="#">Button 2</a>
+      <img src="image/quicksilver.png" alt="Quicksilver">
+      <h3>Quicksilver</h3>
+      <p>The Cosmos Liquid Staking Zone</p>
+      <a href="https://www.mintscan.io/quicksilver/validators/quickvaloper1aguhtx68j7kujanaftnm7sj87dk46wfqkfp6ky" target="_blank" rel="noopener noreferrer">Stake</a>
+      <a href="https://quicksilver.zone/" target="_blank" rel="noopener noreferrer">Info</a>
     </div>
     <div class="block">
-      <img src="image/islamic.png" alt="Random Image 3">
-      <h3>Feature 3</h3>
-      <p>Description of Feature 3</p>
-      <a href="#">Button 1</a>
-      <a href="#">Button 2</a>
-    </div>
-    <div class="block">
-      <img src="image/near.png" alt="Random Image 4">
-      <h3>Feature 4</h3>
-      <p>Description of Feature 4</p>
-      <a href="#">Button 1</a>
-      <a href="#">Button 2</a>
+      <img src="image/forta.png" alt="Forta">
+      <h3>Forta</h3>
+      <p>Monitoring and protecting all assets in Web3</p>
+      <a href="https://forta.org/" target="_blank" rel="noopener noreferrer">Info</a>
     </div>
   </div>
 </div>
@@ -305,46 +284,46 @@
   <div class="section-header"><h2>Testnet</h2></div>
   <div class="content">
     <div class="block">
-      <img src="image/forta.png" alt="Random Image 1">
-      <h3>Feature 1</h3>
-      <p>Description of Feature 1</p>
-      <a href="#">Button 1</a>
-      <a href="#">Button 2</a>
+      <img src="image/haqq.png" alt="Haqq">
+      <h3>Haqq</h3>
+      <p>Scalable and interoperable Ethereum, built on Proof-of-Stake with fast-finality blockchain</p>
+      <a href="https://haqq.explorers.guru/validator/haqqvaloper14gmqwp3sp9n05tetzvptafgg74zs8angqkeyd6" target="_blank" rel="noopener noreferrer">Stake</a>
+      <a href="https://islamiccoin.net/haqq-network" target="_blank" rel="noopener noreferrer">Info</a>
     </div>
     <div class="block">
-      <img src="image/hypersign.png" alt="Random Image 2">
-      <h3>Feature 2</h3>
-      <p>Description of Feature 2</p>
-      <a href="#">Button 1</a>
-      <a href="#">Button 2</a>
+      <img src="image/hypersign.png" alt="Hypersign">
+      <h3>Hypersign</h3>
+      <p>Decentralized identity layer for the internet</p>
+      <a href="https://explorer.hypersign.id/hypersign-testnet/staking/hidvaloper1l4tma7md0v4qa25alqqz7jh60dazn3uhqj9f56" target="_blank" rel="noopener noreferrer">Stake</a>
+      <a href="https://hypersign.id/" target="_blank" rel="noopener noreferrer">Info</a>
     </div>
     <div class="block">
-      <img src="image/islamic.png" alt="Random Image 3">
-      <h3>Feature 3</h3>
-      <p>Description of Feature 3</p>
-      <a href="#">Button 1</a>
-      <a href="#">Button 2</a>
+      <img src="image/mars.png" alt="Mars">
+      <h3>Mars</h3>
+      <p>Lend, borrow and earn with an autonomous credit protocol</p>
+      <a href="https://mars.explorers.guru/validator/marsvaloper192extk45m02u06gqvxk8jzpp7u6mrwj4l36ns7" target="_blank" rel="noopener noreferrer">Stake</a>
+      <a href="https://marsprotocol.io/" target="_blank" rel="noopener noreferrer">Info</a>
     </div>
     <div class="block">
-      <img src="image/near.png" alt="Random Image 4">
-      <h3>Feature 4</h3>
-      <p>Description of Feature 4</p>
-      <a href="#">Button 1</a>
-      <a href="#">Button 2</a>
+      <img src="image/okp4.png" alt="OKP4">
+      <h3>OKP4</h3>
+      <p>Domain-specific layer-1 dedicated to trust-minimized data sharing</p>
+      <a href="https://okp4.explorers.guru/validator/okp4valoper1w072tmg3ctdzxuk7egkd4rw4xtpgm85ufr7r8e" target="_blank" rel="noopener noreferrer">Stake</a>
+      <a href="https://okp4.network/" target="_blank" rel="noopener noreferrer">Info</a>
     </div>
     <div class="block">
-      <img src="image/okp4.png" alt="Random Image 5">
-      <h3>Feature 5</h3>
-      <p>Description of Feature 5</p>
-      <a href="#">Button 1</a>
-      <a href="#">Button 2</a>
+      <img src="image/quicksilver.png" alt="Quicksilver">
+      <h3>Quicksilver</h3>
+      <p>The Cosmos Liquid Staking Zone</p>
+      <a href="https://testnet.ping.pub/quicksilver/staking/quickvaloper1eu8eadxd7tlyxujcl6uctrhvytvh4rvaz5plvq" target="_blank" rel="noopener noreferrer">Stake</a>
+      <a href="https://quicksilver.zone/" target="_blank" rel="noopener noreferrer">Info</a>
     </div>
     <div class="block">
-      <img src="image/quicksilver.png" alt="Random Image 6">
-      <h3>Feature 6</h3>
-      <p>Description of Feature 6</p>
-      <a href="#">Button 1</a>
-      <a href="#">Button 2</a>
+      <img src="image/uptick.png" alt="Uptick">
+      <h3>Uptick</h3>
+      <p>Business-grade infrastructure and ecosystems for NFTs</p>
+      <a href="https://uptick.explorers.guru/validator/uptickvaloper10sedvtussyf2hsftc58ca0cm7lxzhv4xjd9nwr" target="_blank" rel="noopener noreferrer">Stake</a>
+      <a href="https://www.uptick.network/" target="_blank" rel="noopener noreferrer">Info</a>
     </div>
   </div>
 </div>
@@ -353,46 +332,28 @@
   <div class="section-header"><h2><i class="fas fa-caret-left"></i>Landed Testnets</h2></div>
   <div class="content">
     <div class="block">
-      <img src="image/forta.png" alt="Random Image 1">
-      <h3>Feature 1</h3>
-      <p>Description of Feature 1</p>
-      <a href="#">Button 1</a>
-      <a href="#">Button 2</a>
+      <img src="image/archway.png" alt="Archway">
+      <h3>Archway</h3>
+      <p>A layer 1 blockchain, designed to reward developers and builders</p>
+      <a href="https://archway.io/" target="_blank" rel="noopener noreferrer">Info</a>
     </div>
     <div class="block">
-      <img src="image/hypersign.png" alt="Random Image 2">
-      <h3>Feature 2</h3>
-      <p>Description of Feature 2</p>
-      <a href="#">Button 1</a>
-      <a href="#">Button 2</a>
+      <img src="image/forta.png" alt="Forta">
+      <h3>Forta</h3>
+      <p>Monitoring and protecting all assets in Web3</p>
+      <a href="https://forta.org/" target="_blank" rel="noopener noreferrer">Info</a>
     </div>
     <div class="block">
-      <img src="image/islamic.png" alt="Random Image 3">
-      <h3>Feature 3</h3>
-      <p>Description of Feature 3</p>
-      <a href="#">Button 1</a>
-      <a href="#">Button 2</a>
+      <img src="image/neutron.png" alt="Neutron">
+      <h3>Neutron</h3>
+      <p>Smart Contract platform secured by Cosmos Hub</p>
+      <a href="https://neutron.org/" target="_blank" rel="noopener noreferrer">Info</a>
     </div>
     <div class="block">
-      <img src="image/near.png" alt="Random Image 4">
-      <h3>Feature 4</h3>
-      <p>Description of Feature 4</p>
-      <a href="#">Button 1</a>
-      <a href="#">Button 2</a>
-    </div>
-    <div class="block">
-      <img src="image/okp4.png" alt="Random Image 5">
-      <h3>Feature 5</h3>
-      <p>Description of Feature 5</p>
-      <a href="#">Button 1</a>
-      <a href="#">Button 2</a>
-    </div>
-    <div class="block">
-      <img src="image/quicksilver.png" alt="Random Image 6">
-      <h3>Feature 6</h3>
-      <p>Description of Feature 6</p>
-      <a href="#">Button 1</a>
-      <a href="#">Button 2</a>
+      <img src="image/stake-wars.png" alt="Near Stake Wars III">
+      <h3>Near Stake Wars III</h3>
+      <p>Program that helps the community to become a NEAR validator</p>
+      <a href="https://near.org/stakewars/" target="_blank" rel="noopener noreferrer">Info</a>
     </div>
   </div>
 </div>
@@ -400,10 +361,10 @@
 <div class="footer">
   <div><p>&copy; 2023, 2pilot</p></div>
   <div>
-    <a class="fa fa-twitter fa-social-media white" href="#"></a>
-    <a class="fa fa-medium fa-social-media white" href="#"></a>
-    <a class="fa fa-github fa-social-media white" href="#"></a>
-    <a class="fa fa-envelope fa-social-media white" href="#"></a>
+    <a class="fa fa-twitter fa-social-media white" href="#" target="_blank" rel="noopener noreferrer"></a>
+    <a class="fa fa-medium fa-social-media white" href="#" target="_blank" rel="noopener noreferrer"></a>
+    <a class="fa fa-github fa-social-media white" href="#" target="_blank" rel="noopener noreferrer"></a>
+    <a class="fa fa-envelope fa-social-media white" href="#" target="_blank" rel="noopener noreferrer"></a>
   </div>
 </div>
 
