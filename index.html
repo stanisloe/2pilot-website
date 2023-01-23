@@ -55,6 +55,22 @@
           height: 400px;
       }
 
+      .about-us div {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .about-us div div {
+        margin: 15px;
+        height: 150px;
+        min-width: 300px;
+        max-width: 400px;
+        align-items: flex-start;
+        background-color: #1d3557;
+      }
+
       .stars {
           background-image: radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)),
           radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
@@ -63,7 +79,7 @@
           radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)),
           radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
           background-repeat: repeat;
-          background-size: 150px 150px;
+          background-size: 200px 200px;
       }
 
       .section {
@@ -241,23 +257,13 @@
   </div>
 </div>
 <div class="about-us stars">
-  <div style="margin: 20px; width: 400px; background-color: #1d3557">
-    <h2>Co-pilot you can always rely on</h2>
-    <p>We are team of IT professionals with huge expertise in software engineering,
-      devops and tech writing here at your service.
-    </p>
-    <p><b>Startups can rest assured we'll provide:</b></p>
-    <ul>
-      <li>Validator / rpc node; relayers; block explorer</li>
-      <li>Dope article about your game changing tech</li>
-      <li>Positive vibes at discord server</li>
-    </ul>
-    <p><b>As a delegator you can count on:</b></p>
-    <ul>
-      <li>Full support</li>
-      <li>High uptime and no slashing</li>
-      <li>Low commissions</li>
-    </ul>
+  <div>
+    <div>
+      <h2>Co-pilot you can always rely on</h2>
+      <p>We are team of IT professionals with huge expertise in software engineering,
+        devops and tech writing here at your service.
+      </p>
+    </div>
   </div>
 
   <img src="image/about-us-2.png">
