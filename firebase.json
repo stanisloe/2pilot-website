@@ -8,6 +8,10 @@
     "public": ".",
     "rewrites": [
       {
+        "source": "okp4-monitoring.2pilot.dev",
+        "destination": "/monitoring.html"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
